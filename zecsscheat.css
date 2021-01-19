@@ -1,0 +1,272 @@
+body{
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+
+}
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+ /* rotataed side bar */
+  .nav-tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+
+    }
+
+    .nav-tabs {
+        border-bottom: 1px solid white;
+    }
+  .nav-tabs > li {
+      -webkit-writing-mode: vertical-lr;
+          -ms-writing-mode: tb-lr;
+              writing-mode: vertical-lr;
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      list-style-type: none;
+
+  }
+  .nav-tabs > li > a {
+    display: block;
+    padding: 0.6rem 1rem;
+    background-color: rgb(243, 241, 241);
+    border-bottom: none;
+
+  }
+
+
+  #nav {
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+    
+  }
+  
+  .wrapper {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  nav {
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+  
+  nav ul.opening {
+    display: block;
+    height: 30px;
+  }
+  
+  nav li {
+    border-bottom: 1px solid #f6f4e2;
+  }
+  
+  nav li:last-child {
+    border-bottom: none;
+  }
+  
+  nav a {
+    color: #EBEBD3;
+    background: #333;
+    display: block;
+    padding: 1.5em 4em 1.5em 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  nav a:hover,
+  nav a:focus {
+    background: #111;
+  }
+
+  .menu-toggle {
+    position: absolute;
+    padding: 0.8em;
+    top: 1em;
+    right: .5em;
+    cursor: pointer;
+  }
+  
+  .hamburger,
+  .hamburger::before,
+  .hamburger::after {
+    content: '';
+    display: block;
+    background: #EBEBD3;
+    height: 3px;
+    width: 2em;
+    border-radius: 3px;
+    -webkit-transition: all ease-in-out 350ms;
+    transition: all ease-in-out 350ms;
+  }
+  
+  .hamburger::before {
+    -webkit-transform: translateY(-7px);
+            transform: translateY(-7px);
+  }
+  
+  .hamburger::after {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+  }
+  
+  .open .hamburger {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  
+  .open .hamburger::before {
+    display: none;
+  }
+  
+  .open .hamburger::after {
+    -webkit-transform: translateY(-1px) rotate(-90deg);
+            transform: translateY(-1px) rotate(-90deg);
+  }
+
+  @media (min-width: 780px) {
+
+    .menu-toggle {
+      display: none;
+    }
+  
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  
+    nav li {
+      flex: 1 1 auto;
+      border: none;
+    }
+  
+    nav li a {
+      padding: 1.5em 1.3em 1.5em 1.3em;
+      margin: 0;
+      border: none;
+      background-color: white;
+    }
+  
+    nav a:hover,nav a:focus {
+        background-color: rgba(255,255,255,.10);
+    }
+  
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: center;
+      background-color: white
+    }
+  
+  }
+  
+
+
+nav{
+  /* top: 50%; */
+  /* -webkit-transform: translateY(-50%); */
+  /* transform: translateY(-50%); */
+  /* -webkit-transform: rotate(-90deg) translateY(-50%); */
+  /* transform: rotate(-90deg) translateY(-100%); */
+  /* white-space: nowrap; */
+  /* -webkit-transform-origin: center center; */
+  /* transform-origin: center center; */
+  /* left: -210px; */
+  /* margin-top: -10px; */
+  /* ///// */
+  /* display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: flex-start;
+align-items: flex-start;
+  align-content: center;
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  -webkit-transform: rotate(180deg)     translateX(-100%)
+  translateX(-100%);
+
+      transform: rotate(180deg);
+  -webkit-transform-origin: center center;
+      transform-origin: center center;
+  list-style-type: none;
+  width: 64px;
+  height: 100%; */
+  width:100vh;    
+  height:60px;
+  position:fixed;
+  background:#4c4c4c;
+  transform-origin: left top;
+  transform:rotate(-90deg) translateX(-100%);
+  text-align: center;
+  background-color: white;
+
+}
