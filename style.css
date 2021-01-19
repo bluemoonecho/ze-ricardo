@@ -7,14 +7,34 @@ font-family: 'Raleway', sans-serif;
     font-family: 'Quincy';
     src: url(images/Quincy-CF-Medium.otf);
   }
-  
 
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
 
 #body-bootstrap-overrides{
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
     background-color: #614be0;
     color: white;
+}
+
+
+#leve-ja-fez{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    background-color: black;
+    color: white;
+}
+
+#body-eh-hora{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    background-color: white;
+    color: black;
+
 }
 
 #open{
@@ -48,12 +68,16 @@ font-family: 'Raleway', sans-serif;
 }
 
 
+.sidemenu{
+    
+}
+
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    z-index: -1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
     background-color: #111; /* Black*/
@@ -91,6 +115,7 @@ font-family: 'Raleway', sans-serif;
     transition: margin-left .5s;
     padding: 20px;
     margin-left: 70px;
+    margin-right: 50px;
   }
 
 
@@ -106,26 +131,24 @@ nav {
     width:100vh;    
     height:60px;
     position:fixed;
-    background:#4c4c4c;
     transform-origin: left top;
     transform:rotate(-90deg) translateX(-100%);
     text-align: center;
     background-color: white;
-    margin-left: 0;
     
+
 }
 
 #nav-overrides{
-    background-color: white;
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: center;
+	/* justify-content: center; */
 	align-items: flex-start;
     align-content: flex-end;
-    margin-left: 100px;
+    margin-left: 80px;
     z-index: 10;
-    padding: 5px 10px;
+    padding:  20px 10px;
 }
 
 
@@ -157,13 +180,26 @@ nav {
 }
 
 
-.essa{
+.titulo{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
 	align-items: flex-start;
     align-content: flex-start;
+    z-index: 1;
+    min-height: calc(100vh - 50px);
+
+}
+
+
+.titulo-right{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+    align-content: flex-end;
     z-index: 1;
     min-height: calc(100vh - 50px);
 
@@ -183,7 +219,7 @@ nav {
 }
 
 #ressoa{
-	display: flex;
+    display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
@@ -191,12 +227,13 @@ nav {
     align-content: flex-end;
     z-index: 1;
     min-height: calc(100vh - 50px);
+
 }
 
 
 h1{
     font-family: 'Raleway', sans-serif;
-    font-weight: 200;
+    font-weight: 100;
     font-size: 100px;
     text-transform: uppercase;
 }
@@ -212,7 +249,7 @@ h1{
 .socialbar{
     background-color: white;
     width: 100%;
-    height: 100px;
+    height: 80px;
     color:#614be0;
     position: fixed;
     display: flex;
@@ -221,7 +258,6 @@ h1{
 	justify-content: center;
 	align-items: flex-end;
     align-content: flex-end;
-    margin-top: 20%;
     z-index: 2;
     position: fixed;
     left: 0;
@@ -231,11 +267,13 @@ h1{
 .socialtext{
     padding: 5px;
     text-align: center; 
-    
 }
 
 .icon{
     width: 3%
+}
+.social-logo{
+    width: 8%
 }
 
 
@@ -280,4 +318,161 @@ h6 {
 
 p {
     color: black
+}
+
+/* CRISTO */
+
+.cristo-container{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+    align-content: center;
+    margin-top: -100px;
+    margin-left: 50px;
+}
+
+.cristo1{
+    width: 40%;
+    height: 40%;
+    border: 1px solid white;
+}
+.cristo-text{
+    width: 40%;
+    margin: auto;
+    margin-top: -45px;
+}
+.cristo-ficha{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+    align-content: flex-start;
+    width: 30%;
+    margin-bottom: 200px;
+}
+
+.box-cristo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: white;
+    height: 70vh;
+    border: 1px solid black;
+    font-size: 50px;
+    transition-duration: 1s;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.box-cristo:hover{
+    flex: 4;   
+    /* four times more than the others  */
+}
+
+.gallery{
+    display: flex;
+    height: 100vh;
+    align-items: center; 
+
+}
+
+.box-cristo:nth-of-type(1){
+    background-image: url("images/cristo-na-pascoa/IO7A9690.jpg");
+}
+.box-cristo:nth-of-type(2){
+    background-image: url("images/cristo-na-pascoa/IO7A9719.jpg");
+}
+.box-cristo:nth-of-type(3){
+    background-image: url("images/cristo-na-pascoa/IO7A9741.jpg");
+}
+.box-cristo:nth-of-type(4){
+    background-image: url("images/cristo-na-pascoa/IO7A9720-1.jpg");
+}
+.box-cristo:nth-of-type(5){
+    background-image: url("images/cristo-na-pascoa/IO7A9798-1.jpg");
+}
+
+
+@media(max-width: 480px){
+    .gallery {
+        flex-direction: column;
+    }
+    .box-cristo {
+        width: 80vw;
+    }
+}
+
+
+
+/* GILBERTO */
+
+.gilberto-Div{
+    background-color: #f3f3f3;
+    width: 100%;
+    height: 100%;
+    color: black;
+    margin-bottom: 200px;
+    margin-right: 100px;
+}
+
+.gil-text{
+    width: 30%;
+    margin: auto;
+    margin-top: -45px;
+}
+
+.pic-gil-apresenta{
+    width: 40%;
+    height: 40%;
+}
+
+.gil-container{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+    align-content: center;
+    margin-top: -200px;
+    /* margin: auto; */
+}
+
+
+.box-gil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: white;
+    height: 70vh;
+    border: 1px solid black;
+    font-size: 50px;
+    transition-duration: 1s;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.box-gil:nth-of-type(1){
+    background-image: url("images/live-gil-e-isa/IMG_6608.jpg");
+}
+.box-gil:nth-of-type(2){
+    background-image: url("images/live-gil-e-isa/Live_Gil_Iza.JPG");
+}
+.box-gil:nth-of-type(3){
+    background-image: url("images/live-gil-e-isa/IMG_1081.jpg");
+}
+.box-gil:nth-of-type(4){
+    background: url("images/live-gil-e-isa/IMG_6611.MOV");
+}
+.box-gil:nth-of-type(5){
+    background-image: url("images/cristo-na-pascoa/IO7A9798-1.jpg");
+}
+
+.box-gil:hover{
+    flex: 4;   
+    /* four times more than the others  */
 }
