@@ -5,6 +5,10 @@ setTimeout(function () {
   document.getElementById('open').style.display='none';
 }, 3000);
 
+setTimeout(function () {
+  document.getElementById('nav').style.display='none';
+}, 3000);
+
 
 /* Set the width of the side navigation to 250px */
 function openNav() {

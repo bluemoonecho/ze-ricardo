@@ -1,6 +1,7 @@
 body{
 font-family: 'Raleway', sans-serif;
-
+margin: 0;
+padding: 0;
 }
 
 @font-face {
@@ -68,26 +69,9 @@ font-family: 'Raleway', sans-serif;
 }
 
 /*
- * Made by Erik Terwan
- * 24th of November 2015
- * MIT License
- *
- *
- * If you are thinking of using this in
- * production code, beware of the browser
- * prefixes.
+NAVIGATION BAR
  */
 
- body
- {
-   margin: 0;
-   padding: 0;
-   
-   /* make it look decent enough */
-   background: #232323;
-   color: #cdcdcd;
-   font-family: "Avenir Next", "Avenir", sans-serif;
- }
  
  #menuToggle
  {
@@ -106,13 +90,13 @@ font-family: 'Raleway', sans-serif;
  {
    text-decoration: none;
    color: #232323;
-   
+   /* color: white; */
    transition: color 0.3s ease;
  }
  
  #menuToggle a:hover
  {
-   color: tomato;
+   color: #4bfcb9 ;
  }
  
  
@@ -206,15 +190,13 @@ font-family: 'Raleway', sans-serif;
    padding: 50px;
    padding-top: 125px;
    
-   background: #ededed;
+   background: white;
    list-style-type: none;
    -webkit-font-smoothing: antialiased;
    /* to stop flickering of text in safari */
-   
    transform-origin: 0% 0%;
    transform: translate(-100%, 0);
-   
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
  }
  
  #menu li
@@ -231,13 +213,15 @@ font-family: 'Raleway', sans-serif;
    transform: none;
  }
   
+
+ /* END OF MENU */
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
+  /* #main {
     transition: margin-left .5s;
     padding: 20px;
     margin-left: 70px;
     margin-right: 50px;
-  }
+  } */
 
 
 .titulo{
@@ -248,7 +232,8 @@ font-family: 'Raleway', sans-serif;
 	align-items: flex-start;
     align-content: flex-start;
     z-index: 1;
-    min-height: calc(100vh - 50px);
+    font-weight: 100;
+    /* min-height: calc(100vh - 50px); */
 
 }
 
@@ -261,7 +246,9 @@ font-family: 'Raleway', sans-serif;
 	align-items: flex-end;
     align-content: flex-end;
     z-index: 1;
-    min-height: calc(100vh - 50px);
+    /* min-height: calc(100vh - 50px); */
+    text-align: right;
+    margin-right: 100px;
 
 }
 
@@ -291,12 +278,33 @@ font-family: 'Raleway', sans-serif;
 }
 
 
-h1{
+h1 {
     font-family: 'Raleway', sans-serif;
-    font-weight: 100;
+    font-weight: 100 !important;
     font-size: 100px;
     text-transform: uppercase;
 }
+
+
+h6 {
+    font-family: 'Raleway';
+    font-weight: 100;
+    font-size: 18px;
+    text-align: center;
+    text-align: justify;
+    text-justify: left;
+    text-transform: none;
+}
+
+b {
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+
+p {
+    color: black
+}
+
 
 #h1B{
     font-family: 'Raleway', sans-serif;
@@ -330,7 +338,10 @@ h1{
 }
 
 .icon{
-    width: 3%
+    margin-top: -6px;
+    margin-right: 5px;
+    margin-bottom:10px;
+    width: 4%;
 }
 .social-logo{
     width: 8%
@@ -366,21 +377,23 @@ h1{
 
 /* quincy medium */
 
-h6 {
-    font-family: 'Raleway';
-    font-weight: 100;
-    font-size: 18px;
-    text-align: center;
-    text-align: justify;
-    text-justify: left;
-    text-transform: none;
+
+/* CONCECTE */
+
+.conecte-Div{
+    margin: 100px 100px;
 }
 
-p {
-    color: black
+.conecte-icon{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
 }
 
 /* CRISTO */
+.cristo-Div{
+    margin-left: 100px;
+}
 
 .cristo-container{
     display: flex;
@@ -388,19 +401,18 @@ p {
 	flex-wrap: nowrap;
 	justify-content: center;
     align-content: center;
-    margin-top: -100px;
+    margin-top: 100px;
     margin-left: 50px;
 }
 
-.cristo1{
-    width: 40%;
-    height: 40%;
+.cristo-Img{
+    width: 400px;
     border: 1px solid white;
 }
 .cristo-text{
-    width: 40%;
+    font-size: 21px;
     margin: auto;
-    margin-top: -45px;
+    width: 400px;
 }
 .cristo-ficha{
     display: flex;
@@ -409,10 +421,12 @@ p {
 	justify-content: flex-start;
 	align-items: flex-start;
     align-content: flex-start;
-    width: 30%;
-    margin-bottom: 200px;
+    width: 300px;
+    margin-left: 50px;
+
 }
 
+/* CRISTO GALLERY */
 .box-cristo {
     display: flex;
     justify-content: center;
@@ -472,22 +486,30 @@ p {
 
 .gilberto-Div{
     background-color: #f3f3f3;
+    /* border: 100px solid white; */
     width: 100%;
     height: 100%;
     color: black;
-    margin-bottom: 200px;
+    padding-top: 100px;
     margin-right: 100px;
+    display: block;
+    top: 0;
+    left: 0;
 }
 
+
 .gil-text{
-    width: 30%;
-    margin: auto;
-    margin-top: -45px;
+    font-size: 21px;
+    width: 400px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .pic-gil-apresenta{
-    width: 40%;
-    height: 40%;
+    width: 30%;
+    height: 30%;
 }
 
 .gil-container{
@@ -495,11 +517,17 @@ p {
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: center;
-    align-content: center;
-    margin-top: -200px;
-    /* margin: auto; */
 }
 
+.gil-ficha{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+    align-content: flex-end;
+    text-align:right;
+    margin-right: 150px;
+}
 
 .box-gil {
     display: flex;
@@ -526,7 +554,7 @@ p {
     background-image: url("images/live-gil-e-isa/IMG_1081.jpg");
 }
 .box-gil:nth-of-type(4){
-    background: url("images/live-gil-e-isa/IMG_6611.MOV");
+    /* background: url("images/live-gil-e-isa/IMG_6611.MOV"); */
 }
 .box-gil:nth-of-type(5){
     background-image: url("images/cristo-na-pascoa/IO7A9798-1.jpg");
@@ -536,3 +564,4 @@ p {
     flex: 4;   
     /* four times more than the others  */
 }
+

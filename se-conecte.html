@@ -14,43 +14,52 @@
 <body id="body-bootstrap-overrides">
 
       
-        <nav>
-            <div  id='nav-overrides'>
-                    <a id="nav-link" href="/se-conecte.html">SE CONECTE COM A GENTE</a>
-                    <a id="nav-link" href="/a-palestra-do-ze.html">A PALESTRA DO ZÉ</a>      
-                    <a id="nav-link" href="/o-que-a-leve-ja-fez.html">O QUE A LEVE JÁ FEZ</a>
-                    <a id="nav-link" href="/conheca-o-ze.html">CONHEÇA O ZÉ RICARDO</a>             
-                    <a id="nav-link" href="/essa-e-a-leve.html">ESSA É A LEVE</a>        
-                    <p id="nav-burger" onclick="openNav()"> ||| </p>
-              </div>
-    
-         </nav>
-
-
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-      </div>
-      
-      <!-- Use any element to open the sidenav -->
-
-      
+      <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <li>
+              <a id="nav-link" href="/se-conecte.html">SE CONECTE COM A GENTE</a>
+            </li>
+            <li>
+              <a id="nav-link" href="/a-palestra-do-ze.html">A PALESTRA DO ZÉ</a>   
+            </li>
+            <li>
+              <a id="nav-link" href="/o-que-a-leve-ja-fez.html">O QUE A LEVE JÁ FEZ</a>
+            </li>
+            <li class='nav-item'>
+              <a id="nav-link" href="/conheca-o-ze.html">CONHEÇA O ZÉ RICARDO</a>     
+            </li>
+            <li class='nav-item'>
+              <a id="nav-link" href="/essa-e-a-leve.html">ESSA É A LEVE</a>        
+            </li>
+          </ul>
+        </div>
+    </nav>
+     
       <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <div id="main"> 
 
-            <div class='titulo'>
-            <h1>ÉSSA É A <br> <b>LEVE</b> <hr class='hr-essa'></h1> 
-            
+            <div class='titulo-right'>
+            <h1>SE <b>CONECTE</b><br>COM A GENTE<hr class='hr-essa'></h1> 
             </div>
 
-            <div id='ressoa'>
-            <h1>RESSOA <br> <b>LEVE</b> <hr class='hrh1'></h1> 
-            
+            <div class='conecte-Div'>
+            <h6>Fabiana Costa</h6>
+            <br>
+            <h6>prodfabicosta@gmail.com</h6>
+            <br>
+            <div class='conecte-icon'>
+            <img class='icon' alt='instagram' src='images/instabranco.png'><h6>se <span style='color: #A4F3EB'> conecte </span>pelo instagram </h6>
             </div>
-            </div>
+            <div class='conecte-icon'>
+            <img class='icon' alt='youtube' src='images/icone-branco.png'><h6>se <span style='color: #A4F3EB'> conecte </span>pelo youtube</h6>
+            </div>   
+          </div>
+
 
 
          <div class="socialbar">
