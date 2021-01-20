@@ -16,25 +16,41 @@
         <!-- <div id="open" class='open-logo' >
         <img src="images/giflogo.gif" width="100" height="100">
         </div>     -->
-        <nav>
-            <div  id='nav-overrides'>
-                    <a id="nav-link" href="/se-conecte.html">SE CONECTE COM A GENTE</a>
-                    <a id="nav-link" href="/a-palestra-do-ze.html">A PALESTRA DO ZÉ</a>      
-                    <a id="nav-link" href="/o-que-a-leve-ja-fez.html">O QUE A LEVE JÁ FEZ</a>
-                    <a id="nav-link" href="/conheca-o-ze.html">CONHEÇA O ZÉ RICARDO</a>             
-                    <p id="nav-link" href="/essa-e-a-leve.html" onclick="openNav()">ESSA É A LEVE</>   
-                    <a id="nav-link" href="/index.html">[INDEX] </a>        
-     
-                    <p id="nav-burger" onclick="openNav()"> </p>
-              </div>
-    
-         </nav>
-
-
-     <div     
-
-
+        <nav role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu">
+                <a id="nav-link" href="/se-conecte.html">SE CONECTE COM A GENTE</a>
+                <a id="nav-link" href="/a-palestra-do-ze.html">A PALESTRA DO ZÉ</a>   
+                <a id="nav-link" href="/o-que-a-leve-ja-fez.html">O QUE A LEVE JÁ FEZ</a>
+                <a id="nav-link" href="/conheca-o-ze.html">CONHEÇA O ZÉ RICARDO</a>     
+                <a id="nav-link" href="/essa-e-a-leve.html">ESSA É A LEVE</a>        
+              </ul>
+            </div>
+          </nav>
+            <p id="nav-burger" onclick="openNav()"></p>
+      </div>
       
+      <!-- Use any element to open the sidenav -->
 
       
       <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
