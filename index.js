@@ -5,9 +5,20 @@ setTimeout(function () {
   document.getElementById('open').style.display='none';
 }, 3000);
 
-setTimeout(function () {
-  document.getElementById('nav').style.display='none';
-}, 3000);
+
+// Opening nav on hover timeout
+
+
+var hovering = function(){
+  $("hamburger").show("new-nav", { direction: "right" }, 1000);
+};
+
+var leaving = function(){
+  $("hamburger").hide("new-nav", { direction: "left" }, 1000);
+};
+
+$("#hamburger").hover(hovering, leaving);
+
 
 
 /* Set the width of the side navigation to 250px */
@@ -33,6 +44,9 @@ function openNav() {
     document.getElementById("main").style.marginLeft = "70px";
   }
 
+
+document.querySelector('.hide-item')
+.addEventListener('click', () => alert('hidden item still triggers events'));
 
 
 

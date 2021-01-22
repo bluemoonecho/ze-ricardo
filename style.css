@@ -1,13 +1,14 @@
 body{
-font-family: 'Raleway', sans-serif;
+font-family: 'Raleway';
 margin: 0;
 padding: 0;
+
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Quincy';
     src: url(images/Quincy-CF-Medium.otf);
-  }
+  } */
 
   * {
     margin: 0;
@@ -26,7 +27,7 @@ padding: 0;
 #leve-ja-fez{
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
-    background-color: black;
+    background-color: white;
     color: white;
 }
 
@@ -68,10 +69,60 @@ padding: 0;
 
 }
 
+.hamburger span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background: #cdcdcd;
+    border-radius: 3px;
+   
+    z-index: 1;
+
+    top: 50px;
+    left: 50px;
+}
+/* 
+.new-nav{
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    margin-left: 10px;
+    margin-top: 100px;
+} */
+/* 
+.new-nav a {
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+}
+
+ul  {
+    list-style:none;
+    text-decoration: none;
+}
+
+li{
+    padding: 10px;
+} */
+
+
+#main{
+    margin-left: 100px;
+}
+
+
+
+
 /*
 NAVIGATION BAR
  */
 
+#nav-Div{
+    position: fixed;
+}
  
  #menuToggle
  {
@@ -92,12 +143,16 @@ NAVIGATION BAR
    color: #232323;
    /* color: white; */
    transition: color 0.3s ease;
+   font-stretch: 55%;
+
  }
  
  #menuToggle a:hover
  {
-   color: #4bfcb9 ;
- }
+    text-decoration: line-through;
+}
+
+
  
  
  #menuToggle input
@@ -154,7 +209,7 @@ NAVIGATION BAR
   * Transform all the slices of hamburger
   * into a crossmark.
   */
- #menuToggle input:checked ~ span
+  #menuToggle input:checked ~ span
  {
    opacity: 1;
    transform: rotate(45deg) translate(-2px, -1px);
@@ -189,9 +244,7 @@ NAVIGATION BAR
    margin: -100px 0 0 -50px;
    padding: 50px;
    padding-top: 125px;
-   
-   background: white;
-   list-style-type: none;
+      list-style-type: none;
    -webkit-font-smoothing: antialiased;
    /* to stop flickering of text in safari */
    transform-origin: 0% 0%;
@@ -202,7 +255,11 @@ NAVIGATION BAR
  #menu li
  {
    padding: 10px 0;
-   font-size: 22px;
+   font-size: 14px;
+   font-weight: 400;
+   transform:scale(0.3,1); 
+   -webkit-transform:scale(0.8,1);
+   
  }
  
  /*
@@ -212,7 +269,76 @@ NAVIGATION BAR
  {
    transform: none;
  }
+
+ /* //////////////////////////////////////////SUB MENU */
+
+ #hide{
+     /* display: none;
+     transition:0s 180s; */
+    /* display:none; */
+     /* transition: all 0s; delay 1s */
+    height: 0;
+    /* display: block; */
+    transition: all 0s ease 3s; /*delay 1s*/
+    visibility: hidden;
+    margin-top: 0;
+     /* transition: all 0s ease 10s;  */
+ }
+
+ .activate-menu:hover + #hide
+ {
+    transition-delay: 0s;
+    visibility: visible;
+    height: 100%;
+    margin-top: 10px;
+    /* display: block;
+    height: 200px;
+    transition:0s ; */
+    /* transition-delay: 0s; */
+    /* display: block; */
+    /* -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
+    position: absolute;
+    left: -999px;
   
+ }
+ }
+/* .hide:hover .hide-item,
+.hide:focus .hide-item {
+  position: absolute;
+  left: -999px;
+} */
+ }
+.sub-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+/* .sub-menu a{
+    color: gray;
+    font-weight: 10px;
+    font-size: 12px; 
+    font-style: italic;
+    margin-top: 8px;
+} */
+
+#sub-nav-link{
+    color: gray;
+    font-weight: 10px;
+    font-size: 12px; 
+    font-style: italic;
+    margin-top: 8px;
+}
+/* 
+.hide {
+    display: none;
+  }
+  
+  .myDIV:hover + .hide {
+    display: block;
+    color: red;
+  } */
 
  /* END OF MENU */
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -283,17 +409,28 @@ h1 {
     font-weight: 100 !important;
     font-size: 100px;
     text-transform: uppercase;
+    transform:scale(0.3,1); 
+    -webkit-transform:scale(0.8,1);
+    display:inline-block; 
 }
 
 
 h6 {
     font-family: 'Raleway';
+    font-stretch: 75%;
     font-weight: 100;
     font-size: 18px;
     text-align: center;
     text-align: justify;
     text-justify: left;
     text-transform: none;
+    letter-spacing: 1px;
+    line-height: 32px;
+}
+
+h7{
+    margin-top: 100px;
+    line-height: 40px;
 }
 
 b {
@@ -302,8 +439,11 @@ b {
 }
 
 p {
-    color: black
+    color: black;
+    font-stretch: semi-condensed;
+
 }
+
 
 
 #h1B{
@@ -317,36 +457,40 @@ p {
 .socialbar{
     background-color: white;
     width: 100%;
-    height: 80px;
+    height: 100px;
     color:#614be0;
     position: fixed;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    display: flex;
+	flex-direction: row;
+}
+
+
+.icon{
+    /* margin-top: 6px;
+    margin-right: 5px;
+    margin-bottom:10px; */
+    width: 50px;
+}
+
+.social-logo{
+    width: 130px;
+    margin-left: 30px;
+}
+
+.social-icons{
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: flex-end;
+	justify-content: flex-end;
+	align-items: center;
     align-content: flex-end;
-    z-index: 2;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-}
+    margin-left: 60%;
+    margin-right: 5%;
 
-.socialtext{
-    padding: 5px;
-    text-align: center; 
 }
-
-.icon{
-    margin-top: -6px;
-    margin-right: 5px;
-    margin-bottom:10px;
-    width: 4%;
-}
-.social-logo{
-    width: 8%
-}
-
 
 /* CONHECA O ZE RICARDO */
 .ze-ricardo{
@@ -358,15 +502,21 @@ p {
     align-content: flex-end;
     /* z-index: 1; */
     /* min-height: calc(100vh - 50px ); */
-    margin-bottom: 100px;
+    margin-bottom: 300px;
+    margin-right: 100px;
 }
 
+
+
 .quote {
-    width: 40%;
+    width: 50%;
     text-align: right;
     text-transform: uppercase;
     font-family: 'Raleway';
     font-weight: 100;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 
 }    
 
@@ -384,35 +534,60 @@ p {
     margin: 100px 100px;
 }
 
-.conecte-icon{
-    margin-top: 20px;
+.conecte-frase{
+    margin-top: 10px;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: row;
 }
 
+.icon-conecte{
+    width: 50px;
+    height: 50px;
+    margin-top: -6px;
+}
+
 /* CRISTO */
+.titulo-cristo{
+    width: 900px;
+    margin-bottom: 120px;
+}
+
 .cristo-Div{
     margin-left: 100px;
+    color: black;
+
+    /* background-color: black; */
 }
 
 .cristo-container{
+
     display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	/* align-items: baseline; */
+	align-content: flex-start;
+    /* display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: center;
-    align-content: center;
-    margin-top: 100px;
+    align-content: center; */
     margin-left: 50px;
 }
 
 .cristo-Img{
     width: 400px;
     border: 1px solid white;
+    margin-bottom: 50px
 }
 .cristo-text{
     font-size: 21px;
-    margin: auto;
     width: 400px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+
 }
 .cristo-ficha{
     display: flex;
@@ -421,8 +596,8 @@ p {
 	justify-content: flex-start;
 	align-items: flex-start;
     align-content: flex-start;
-    width: 300px;
-    margin-left: 50px;
+    width: 400px;
+    margin-left: 100px;
 
 }
 
@@ -434,12 +609,12 @@ p {
     flex: 1;
     color: white;
     height: 70vh;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     font-size: 50px;
     transition-duration: 1s;
     background-position: center;
     background-size: cover;
-    
+   
 }
 
 .box-cristo:hover{
@@ -451,7 +626,6 @@ p {
     display: flex;
     height: 100vh;
     align-items: center; 
-
 }
 
 .box-cristo:nth-of-type(1){
@@ -484,17 +658,24 @@ p {
 
 /* GILBERTO */
 
+
+
 .gilberto-Div{
-    background-color: #f3f3f3;
-    /* border: 100px solid white; */
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    /* height: 100%; */
     color: black;
-    padding-top: 100px;
-    margin-right: 100px;
-    display: block;
+    /* margin-right: 200px; */
+    /* display: block;
     top: 0;
-    left: 0;
+    left: 0; */
+    
+}
+
+.titulo-gil{
+    width: 900px;
+    margin-left: 400px;
+    margin-bottom: 120px;
+
 }
 
 
@@ -503,26 +684,25 @@ p {
     width: 400px;
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 50px;
     margin-bottom: 50px;
 }
 
 .pic-gil-apresenta{
-    width: 30%;
-    height: 30%;
+    width: 400px;
 }
 
 .gil-container{
     display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	justify-content: center;
+	align-content: flex-start;
+
 }
 
 .gil-ficha{
     display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
 	justify-content: flex-end;
     align-content: flex-end;
     text-align:right;
@@ -536,7 +716,7 @@ p {
     flex: 1;
     color: white;
     height: 70vh;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     font-size: 50px;
     transition-duration: 1s;
     background-position: center;
@@ -557,11 +737,112 @@ p {
     /* background: url("images/live-gil-e-isa/IMG_6611.MOV"); */
 }
 .box-gil:nth-of-type(5){
-    background-image: url("images/cristo-na-pascoa/IO7A9798-1.jpg");
+    background-image: url("images/live-gil-e-isa/IMG_6597.jpg");
+}
+.box-gil:nth-of-type(6){
+    background-image: url("images/live-gil-e-isa/IMG_6591.jpg");
 }
 
 .box-gil:hover{
     flex: 4;   
     /* four times more than the others  */
 }
+
+
+/* 
+ul.images {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    width: 900px;
+    overflow-x: auto;
+    background-color: #ddd;
+  }
+  ul.images li {
+    display: inline;
+    width: 150px;
+    height: 150px;
+  } */
+/* ///////////////////MILTON */
+
+  .milton-Div{
+/* 
+    width: 100%;
+    height: 100%; */
+    color: black;
+    margin-left: 100px;
+
+    /* margin-right: 200px; */
+    /* display: block;
+    top: 0;
+    left: 0; */
+  }
+
+  .milton-text{
+    font-size: 21px;
+    width: 400px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+
+  }
+
+  .pic-milton-apresenta{
+    width: 500px;
+  }
+
+  .milton-container{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: flex-start;
+  }
+  .milton-ficha{
+    display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+    align-content: flex-end;
+    text-align:right;
+    margin-right: 150px;
+  }
+
+  /* LIVE DA FORD */
+
+
+  .ford-Div{
+      display: flex;
+      flex-direction: column;
+      margin-left: 100px;
+      color: black;
+    }
+
+    .titulo-ford{
+        width: 900px;
+        margin-bottom: 120px;
+
+    }
+    
+      .ford-text{
+        font-size: 21px;
+        margin-top: 50px;
+        width: 400px;
+
+        /* margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 50px; */
+    
+      }
+    
+      .ford-pic{
+        width: 70%
+      }
+    
+      .ford-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+      }
 
