@@ -11,32 +11,172 @@ padding: 0;
   }
   
 
-#body-bootstrap-overrides{
+#body-index{
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
-    background-color: #614be0;
+    /* background-color: #614be0; */
     color: white;
     /* transition: background-color #5c5c5e 2s; */
-    height: 100px;
-    -webkit-animation-name: blackWhite;  
+    /* height: 100px; */
+    -webkit-animation-name: colorChangeBlue;  
     -webkit-animation-iteration-count: infinite;  
     -webkit-animation-duration: 5s ; 
     -webkit-animation-transition: 5s ease-out;
 
-    -webkit-transition: background-color 5s ease-out;
-    -moz-transition: background-color 5s ease-out;
-    -o-transition: background-color 5s ease-out;
-    transition: background-color 5s ease-out;
+    -webkit-transition: background-image 5s ease-out;
+    -moz-transition: background-image 5s ease-out;
+    -o-transition: background-image 5s ease-out;
+    transition: background-image 5s ease-out;
 }
 
-@-webkit-keyframes blackWhite {  
-    0% { background-color :#614be0; }
-    /* 50% { background-color: #614be0 } */
-    51% { background-color: #b1aadd; }
-    /* 100% { background-color: #b1aadd; } */
-    0% { background-color :#614be0; }
+@-webkit-keyframes colorChangeBlue {  
+    0% {    background-image: url('images/background-colors/azul.png'); 
+            background-size: cover;
+            background-repeat: no-repeat, repeat;
+            background-attachment: fixed;
+    
+    }
+    50% {    background-image: url('images/background-colors/azul2.png'); 
+        background-size: cover;
+        background-repeat: no-repeat, repeat;
+        background-attachment: fixed;
+        
 
-  }
+}
+100% { background-image: url('images/background-colors/azul.png'); 
+    background-size: cover;
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed;
+
+}
+
+}
+
+@-webkit-keyframes colorChangePurple {  
+    0% {    background-image: url('images/background-colors/roxo.png'); 
+            background-size: cover;
+            background-repeat: no-repeat, repeat;
+            background-attachment: fixed;
+    
+    }
+    50% {    background-image: url('images/background-colors/roxo2.png'); 
+        background-size: cover;
+        background-repeat: no-repeat, repeat;
+        background-attachment: fixed;
+        
+
+}
+100% { background-image: url('images/background-colors/roxo.png'); 
+    background-size: cover;
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed;
+
+}
+
+}
+
+@-webkit-keyframes colorChangeGreen {  
+    0% {    background-image: url('images/background-colors/verde.png'); 
+            background-size: cover;
+            background-repeat: no-repeat, repeat;
+            background-attachment: fixed;
+    
+    }
+    50% {    background-image: url('images/background-colors/verde2.png'); 
+        background-size: cover;
+        background-repeat: no-repeat, repeat;
+        background-attachment: fixed;
+        
+
+}
+100% { background-image: url('images/background-colors/verde.png'); 
+    background-size: cover;
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed;
+
+}
+
+}
+
+
+#body-o-que-a-leve-faz{
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    /* background-color: #614be0; */
+    color: white;
+    /* transition: background-color #5c5c5e 2s; */
+    /* height: 100px; */
+    -webkit-animation-name: colorChangeBlue;  
+    -webkit-animation-iteration-count: infinite;  
+    -webkit-animation-duration: 5s ; 
+    -webkit-animation-transition: 5s ease-out;
+
+    -webkit-transition: background-image 5s ease-out;
+    -moz-transition: background-image 5s ease-out;
+    -o-transition: background-image 5s ease-out;
+    transition: background-image 5s ease-out;
+
+}
+
+#body-se-conecte{
+
+font-family: 'Raleway', sans-serif;
+font-weight: 100;
+/* background-color: #614be0; */
+color: white;
+/* transition: background-color #5c5c5e 2s; */
+/* height: 100px; */
+-webkit-animation-name: colorChangeGreen;  
+-webkit-animation-iteration-count: infinite;  
+-webkit-animation-duration: 5s ; 
+-webkit-animation-transition: 5s ease-out;
+
+-webkit-transition: background-image 5s ease-out;
+-moz-transition: background-image 5s ease-out;
+-o-transition: background-image 5s ease-out;
+transition: background-image 5s ease-out;
+
+}
+
+#body-a-palestra-do-ze{
+
+font-family: 'Raleway', sans-serif;
+font-weight: 100;
+/* background-color: #614be0; */
+color: white;
+/* transition: background-color #5c5c5e 2s; */
+/* height: 100px; */
+-webkit-animation-name: colorChangePurple;  
+-webkit-animation-iteration-count: infinite;  
+-webkit-animation-duration: 5s ; 
+-webkit-animation-transition: 5s ease-out;
+
+-webkit-transition: background-image 5s ease-out;
+-moz-transition: background-image 5s ease-out;
+-o-transition: background-image 5s ease-out;
+transition: background-image 5s ease-out;
+}
+
+
+#body-essa-eh-a-leve{
+    font-family: 'Raleway', sans-serif;
+font-weight: 100;
+/* background-color: #614be0; */
+color: white;
+/* transition: background-color #5c5c5e 2s; */
+/* height: 100px; */
+-webkit-animation-name: colorChangeGreen;  
+-webkit-animation-iteration-count: infinite;  
+-webkit-animation-duration: 5s ; 
+-webkit-animation-transition: 5s ease-out;
+
+-webkit-transition: background-image 5s ease-out;
+-moz-transition: background-image 5s ease-out;
+-o-transition: background-image 5s ease-out;
+transition: background-image 5s ease-out;
+}
+
 
 
   
@@ -60,7 +200,6 @@ transition-duration: background-color 10s, 30s, 230ms;  */
     background-color: #614be0;
     font-weight: 100;
     color: white;
-
 }
 
 #body-essa-eh{
@@ -110,7 +249,11 @@ transition-duration: background-color 10s, 30s, 230ms;  */
     background-attachment: fixed;
 }
 
-.hamburger span{
+/* input[type="submit"].btn:hover {
+    border: 1px solid black;
+  } */
+
+/* .hamburger span{
     display: block;
     width: 33px;
     height: 4px;
@@ -122,6 +265,16 @@ transition-duration: background-color 10s, 30s, 230ms;  */
     top: 50px;
     left: 50px;
 }
+
+.the-big{
+    /* display:none; */
+    /* position: absolute; */
+        /* margin: -120px -100px -200px  -80px; */
+    /* width: 300px;
+    margin: 100px;
+    background-color: red;
+    z-index: 10; */
+
 
 
 
@@ -208,7 +361,7 @@ NAVIGATION BAR
                opacity 0.55s ease;
  }
  
- #menuToggle span:first-child
+ /* #menuToggle span:first-child
  {
    transform-origin: 0% 0%;
  }
@@ -216,35 +369,36 @@ NAVIGATION BAR
  #menuToggle span:nth-last-child(2)
  {
    transform-origin: 0% 100%;
- }
+ } */
  
  /* 
   * Transform all the slices of hamburger
   * into a crossmark.
   */
+
   #menuToggle input:checked ~ span
  {
-   opacity: 1;
-   transform: rotate(45deg) translate(-2px, -1px);
-   background: white;
+   opacity: 0;
+   /* transform: rotate(45deg) translate(-2px, -1px);
+   background: white; */
  }
  
  /*
   * But let's hide the middle one.
   */
- #menuToggle input:checked ~ span:nth-last-child(3)
+ /* #menuToggle input:checked ~ span:nth-last-child(3)
  {
    opacity: 0;
    transform: rotate(0deg) scale(0.2, 0.2);
- }
+ } */
  
  /*
   * Ohyeah and the last one should go the other direction
   */
- #menuToggle input:checked ~ span:nth-last-child(2)
+ /* #menuToggle input:checked ~ span:nth-last-child(2)
  {
    transform: rotate(-45deg) translate(0, -1px);
- }
+ } */
  
  /*
   * Make this absolute positioned
