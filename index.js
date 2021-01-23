@@ -5,6 +5,13 @@ setTimeout(function () {
   document.getElementById('open').style.display='none';
 }, 3000);
 
+//change background color 
+
+// setInterval(
+//   function () {
+//     var randomColor = Math.floor(Math.random()*16777215).toString(16);
+//     document.body.style.backgroundColor = "#"+randomColor;
+//   },1000);
 
 // Opening nav on hover timeout
 
