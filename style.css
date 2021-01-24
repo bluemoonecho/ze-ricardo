@@ -106,7 +106,6 @@ background-color: transparent;
 
 #body-index{
     font-family: 'Raleway', sans-serif;
-    font-weight: 100;
     /* background-color: #614be0; */
     color: white;
     /* transition: background-color #5c5c5e 2s; */
@@ -121,20 +120,10 @@ background-color: transparent;
     -o-transition: background-image 5s ease-out;
     transition: background-image 5s ease-out;
 
-    font-family: 'Raleway', sans-serif;
-    font-weight: 100;
-    background-color: white;
 }
 
 
-#body-o-que-a-leve-faz{
-
-    font-family: 'Raleway', sans-serif;
-    font-weight: 100;
-    /* background-color: #614be0; */
-    color: white;
-    /* transition: background-color #5c5c5e 2s; */
-    /* height: 100px; */
+#body-o-que-a-leve-ja-fez{
     -webkit-animation-name: colorChangeBlue;  
     -webkit-animation-iteration-count: infinite;  
     -webkit-animation-duration: 5s ; 
@@ -146,7 +135,6 @@ background-color: transparent;
     transition: background-image 5s ease-out;
 
     font-family: 'Raleway', sans-serif;
-    /* background-color: #614be0; */
     font-weight: 100;
     color: white;
 
@@ -271,11 +259,14 @@ color: white;
 
 
 #main{
-    margin-left: 10%;
+    margin-left: 20%;
     margin-right: 10%;
 }
 
-
+#main-o-que-a-leve-ja-fez{
+    margin-left: 20%;
+    margin-right: 10%;
+}
 /*
 NAVIGATION BAR
  */
@@ -368,7 +359,7 @@ NAVIGATION BAR
 
   #menuToggle input:checked ~ span
  {
-   opacity: 0;
+   opacity: 100;
    /* transform: rotate(45deg) translate(-2px, -1px);
    background: white; */
  }
@@ -408,6 +399,7 @@ NAVIGATION BAR
    transform-origin: 0% 0%;
    transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
  }
  
  #menu li
@@ -549,8 +541,6 @@ NAVIGATION BAR
 }
 
 
-
-
 .hr-essa{
 
     width: 100%;
@@ -565,8 +555,10 @@ NAVIGATION BAR
 }
 
 .hrZericardo{
-    width: 80%;
+    width: 75%;
     margin-right: 50px;
+    border: 1.5px solid;
+    margin-top: 30px;
 }
 
 #ressoa{
@@ -584,7 +576,7 @@ NAVIGATION BAR
 
 h1 {
     font-family: 'Raleway', sans-serif;
-    font-weight: 100 !important;
+    font-weight: 200 !important;
     font-size: 100px;
     text-transform: uppercase;
     transform:scale(0.3,1); 
@@ -596,7 +588,7 @@ h1 {
 @media (max-width: 767px) {
     h1 {
         font-family: 'Raleway', sans-serif;
-        font-weight: 100 !important;
+        font-weight: 200 !important;
         font-size: 50px;
         text-transform: uppercase;
         transform:scale(0.3,1); 
@@ -615,7 +607,8 @@ h4{
     font-family: 'Raleway';
     line-height: 33px;
     font-size: 25px;
-    font-weight: 100;
+    font-weight: 400 !important;
+
 }
 
 
@@ -630,10 +623,11 @@ h6 {
     text-transform: none;
     letter-spacing: 1px;
     line-height: 32px;
+    font-weight: 300 !important;
+
 }
 
 h7{
-    margin-top: 100px;
     line-height: 40px;
 }
 
@@ -679,11 +673,11 @@ p {
     /* margin-top: 6px;
     margin-right: 5px;
     margin-bottom:10px; */
-    width: 50px;
+    width: 40px;
 }
 
 .social-logo{
-    width: 130px;
+    width: 150px;
     margin-left: 30px;
 }
 
@@ -802,36 +796,45 @@ p {
 }    
 
 
-
-
-
 /* ///////////////////////////////////// SE CONCECTE */
-
+.se-conecte-Div{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	/* justify-content: flex-start; */
+	align-items: flex-end;
+    align-content: flex-end;
+    z-index: 2;
+    /* min-height: calc(100vh - 50px ); */
+    margin: auto;
+}
 .titulo-se-conecte{
-
+    margin-top: 50px;
     display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	justify-content: flex-start;
+	justify-content: flex-end;
 	align-items: flex-end;
     align-content: flex-end;
     z-index: 1;
     /* min-height: calc(100vh - 50px); */
     text-align: right;
-    margin-right: 10px;
-    margin-top: 100px;
+    right: 10%;
+    left: 10%;
 }
 
-.se-conecte-Div{
+.se-conecte-container{
     /* margin: 100px 100px; */
-    width: 100%;
     display: flex;
     flex-direction: column;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	justify-content: flex-start;
 	align-items: flex-start;
     align-content: flex-end;
     margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-top: 
 
 }
 
@@ -871,36 +874,50 @@ p {
         width: 100%;
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         justify-content: flex-start;
         align-items: flex-start;
         align-content: flex-end;
-        margin-top: 50px;
+        margin-top: 100px;
         margin-left:10%
     
     }
 }
 
-/* /////////////////////////////////CRISTO */
-/* .titulo-cristo{
-    width: 900px;
-    margin-bottom: 120px;
-} */
+/* //////////////////////////////////////CRISTO */
+
 
 .cristo-Div{
-    margin-left: 100px;
-
-    /* background-color: black; */
+    margin-left: 30px;
 }
+
+.titulo-cristo{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+    align-content: flex-start;
+    z-index: -1;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100vh;
+    margin-left: 0;
+}
+
 
 .cristo-container{
 
     display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
+
+	/* justify-content: center; */
 	/* align-items: baseline; */
-	align-content: flex-start;
+   
+    
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+    align-content: flex-start;
     /* display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -913,25 +930,20 @@ p {
     width: 400px;
     height: 500px;
     border: 1px solid white;
-    margin-bottom: 50px
+    /* margin-bottom: 50px */
 }
 .cristo-text{
     font-size: 21px;
     width: 400px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 50px;
+    /* margin-left: 100px;
+    margin-right: 100px; */
+    margin: auto;
 
 }
 .cristo-ficha{
-    display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-    align-content: flex-start;
+ 
     width: 400px;
-    margin-left: 100px;
+    margin-left: 50px;
 
 }
 
