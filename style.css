@@ -230,9 +230,34 @@ color: white;
 
 
 #main{
+    /* margin-top: 0px; */
     margin-left: 20%;
     margin-right: 10%;
+    z-index: 1;
 }
+
+
+
+@media (max-width: 767px) {
+
+    #main{
+        /* margin-top: 0px; */
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #main-mobile{
+        transition: margin-top .5s;
+        margin-top: 1px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #nav-Div{
+        position: top;
+    }
+} 
+
 
 #main-o-que-a-leve-ja-fez{
     margin-left: 20%;
@@ -251,15 +276,16 @@ NAVIGATION BAR
 
 #nav-Div{
     position: fixed;
+    z-index: 10;
+
 }
  
  #menuToggle
  {
    display: block;
-   position: relative;
+   position: fixed;
    top: 50px;
    left: 50px; 
-   z-index: 10;
    -webkit-user-select: none;
    user-select: none;
  }
@@ -366,7 +392,7 @@ NAVIGATION BAR
 
  #menu
  {
-   position: absolute;
+   /* display: inline; */
    width: 300px;
    margin: -120px -100px -200px  -80px;
    /* top, right, bottom, left */
@@ -408,7 +434,7 @@ NAVIGATION BAR
      /* transition: all 0s; delay 1s */
     height: 0;
     /* display: block; */
-    transition: all 0s ease 3s; /*delay 1s*/
+    transition: all 0s ease 5s; /*delay 1s*/
     visibility: hidden;
     margin-top: 0;
      /* transition: all 0s ease 10s;  */
@@ -479,16 +505,7 @@ NAVIGATION BAR
   } */
 
 
-.titulo{
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-    align-content: flex-start;
-    z-index: -1;
-    /* min-height: calc(100vh - 50px); */
- 
-}
+
 .titulo-right{
 	display: flex;
 	flex-direction: column;
@@ -687,7 +704,7 @@ p {
 
 }
 
-/* CONHECA O ZE RICARDO */
+/* ///////////////////CONHECA O ZE RICARDO */
 .ze-ricardo{
     display: flex;
 	flex-direction: column;
@@ -803,6 +820,8 @@ p {
     z-index: 1;
     /* min-height: calc(100vh - 50px ); */
     margin: auto;
+    
+    
 }
 .titulo-se-conecte{
     margin-top: 50px;
@@ -846,36 +865,51 @@ p {
 
 
 @media (max-width: 767px) {
+
+    .se-conecte-Div{
+        /* margin: 100px 100px; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: auto;    
+    }
+
+    
     .titulo-se-conecte{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: flex-end;
-        align-content: flex-end;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
         z-index: 1;
         /* min-height: calc(100vh - 50px); */
         text-align: right;
         /* margin-right: -50px; */
-        margin-top: 30%;
         margin-left: 50px;
         
     }
-    
-    .se-conecte-Div{
+
+    .se-conecte-container{
         /* margin: 100px 100px; */
-        width: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: flex-start;
-        align-content: flex-end;
-        margin-top: 100px;
-        margin-left:10%
-    
+        align-content: flex-start;
+        margin-top: 50px;
+        margin-bottom: 100px;
     }
+    
+  
 }
+
+
+
 
 /* /////////////////////ESSA E A LEVE DIV */
 .essa-e-a-leve-Div{

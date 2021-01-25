@@ -55,7 +55,61 @@ function openNav() {
 document.querySelector('.hide-item')
 .addEventListener('click', () => alert('hidden item still triggers events'));
 
+// function mobileNav(){
+//   document.getElementById("main").style.marginTop = "70px";
+// }
 
+// function closemobileNav() {
+//   document.getElementById("main").style.width = "0";
+// }
+
+var w = window.matchMedia("(max-width: 767px)")
+
+// if(w.matches){
+// function activateMobile(){
+//       var x = document.getElementById("main");
+//       if (x.style.marginTop === "400px") {
+//         x.style.marginTop = "0px";
+//       } else {
+//         x.style.marginTop = "400px";
+//       }
+//     }
+  
+
+// Create a media condition that targets viewports at least 768px wide
+
+  function activateMobile(){
+      var x = document.getElementById("main-mobile");
+      if (x.style.marginTop === "400px") {
+        x.style.marginTop = "1px";
+      } else {
+        x.style.marginTop = "400px";
+      }
+    }
+
+
+
+
+
+
+// function mobileNav() {
+//   var x = document.getElementById("main");
+//   if (x.style.marginTop === "400px") {
+//     x.style.marginTop = "0px";
+//   } else {
+//     x.style.marginTop = "400px";
+//   }
+// }
+
+
+
+// function myFunction(x) {
+//   if (x.matches) { // If media query matches
+//     document.body.style.backgroundColor = "yellow";
+//   } else {
+//     document.body.style.backgroundColor = "pink";
+//   }
+// }
 
 
 //   $.noConflict();
