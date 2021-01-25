@@ -12,7 +12,7 @@ background-color: transparent;
   }
   
 
-  @-webkit-keyframes colorChangeBlue {  
+@-webkit-keyframes colorChangeBlue {  
     0% {    background-image: url('images/backgroundcor/azul.png'); 
             background-size: cover;
             background-repeat: no-repeat, repeat;
@@ -34,7 +34,6 @@ background-color: transparent;
 }
 
 }
-
 @-webkit-keyframes colorChangePurple {  
     0% {    background-image: url('images/backgroundcor/roxo.png'); 
             background-size: cover;
@@ -49,7 +48,7 @@ background-color: transparent;
         
 
 }
-100% { background-image: url('images/background-colors/roxo.png'); 
+100% { background-image: url('images/backgroundcor/roxo.png'); 
     background-size: cover;
     background-repeat: no-repeat, repeat;
     background-attachment: fixed;
@@ -57,7 +56,6 @@ background-color: transparent;
 }
 
 }
-
 @-webkit-keyframes colorChangeGreen {  
     0% {    background-image: url('images/backgroundcor/verde.png'); 
             background-size: cover;
@@ -231,33 +229,6 @@ color: white;
 }
 
 
-/* input[type="submit"].btn:hover {
-    border: 1px solid black;
-  } */
-
-/* .hamburger span{
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative; 
-    background: #cdcdcd;
-    border-radius: 3px;  
-    z-index: 1;
-    top: 50px;
-    left: 50px;
-}
-
-.the-big{
-    /* display:none; */
-    /* position: absolute; */
-        /* margin: -120px -100px -200px  -80px; */
-    /* width: 300px;
-    margin: 100px;
-    background-color: red;
-    z-index: 10; */
-
-
 #main{
     margin-left: 20%;
     margin-right: 10%;
@@ -267,6 +238,13 @@ color: white;
     margin-left: 20%;
     margin-right: 10%;
 }
+
+#main-palestra-do-ze{
+    margin-left: 20%;
+    margin-right: 10%;
+   
+}
+
 /*
 NAVIGATION BAR
  */
@@ -385,6 +363,7 @@ NAVIGATION BAR
   * Make this absolute positioned
   * at the top left of the screen
   */
+
  #menu
  {
    position: absolute;
@@ -1024,12 +1003,11 @@ p {
     flex-direction: column;
     flex-wrap: wrap;
     z-index: 2;
-    margin: auto;
-    
+    margin: auto;   
 }
 
 .titulo-gil{
-    /* margin-top: 30px; */
+    margin-top: 30px;
     margin-right: -60px;
     margin-bottom: 100px;
 	display: flex;
@@ -1089,16 +1067,6 @@ p {
     background-position: center;
     background-size: cover;
     
-}
-
-.box-gil-video{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex: 1;
-    transition-duration: 1s;
-    border: none;
 }
 
 .box-gil-video{
@@ -1289,32 +1257,28 @@ video::-webkit-media-controls-panel {
 }
 
 .titulo-ford{
-        margin-top: 30px;
-        margin-right: -50px;
-        margin-bottom: 50px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: flex-start;
-        justify-content: flex-start;
-        align-content: flex-start;
-        z-index: 1;
-        text-align: left;
-        right: 10%;
-        left: 10%;
-    }
+    /* margin-right: 50px; */
+    margin-top: 30px;
+    margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: flex-end;
+    justify-content: flex-end;
+    align-content: flex-end;
+    z-index: 1;
+    text-align: right;
+}
     
 .ford-text{
     font-size: 21px;
     width: 400px;
     margin: auto;
-
-
 }
 
 .ford-container{
     display: flex;
-	flex-direction: row;
+	flex-direction: column;
     display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
@@ -1358,4 +1322,222 @@ video::-webkit-media-controls-panel {
     align-content: flex-start;
     margin-left: 50px;
 
+}
+
+
+/* /////////////PREMIO UBC 2018 */
+
+.premio-ubc-2018-Div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 2;
+    margin: auto;
+
+}
+.titulo-premio-ubc-2018{
+    margin-top: 30px;
+    margin-right: -50px;
+    margin-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    z-index: 1;
+    text-align: left;
+    right: 10%;
+    left: 10%;
+
+}
+.premio-ubc-2018-container{
+    display: flex;
+	flex-direction: row;
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+    align-content: flex-start;
+    margin-left: 50px;
+
+}
+
+/* ////////////////////VERAO TIM 2020 */
+
+.verao-tim-2020-Div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 2;
+    margin: auto;
+
+}
+.titulo-verao-tim-2020{
+    margin-top: 30px;
+    margin-right: -50px;
+    margin-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    z-index: 1;
+    text-align: left;
+    right: 10%;
+    left: 10%;
+
+}
+.verao-tim-2020-container{
+    display: flex;
+	flex-direction: row;
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+    align-content: flex-start;
+    margin-left: 50px;
+
+}
+
+/* ///////////////Convenção da tim 2020 */
+
+.convencao-da-tim-2020-Div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 2;
+    margin: auto;
+
+}
+.titulo-convencao-da-tim-2020{
+    margin-top: 30px;
+    margin-right: -50px;
+    margin-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    z-index: 1;
+    text-align: left;
+    right: 10%;
+    left: 10%;
+
+}
+.convencao-da-tim-2020-container{
+    display: flex;
+	flex-direction: row;
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+    align-content: flex-start;
+    margin-left: 50px;
+
+}
+
+
+/* ////////////MARATONA RIO */
+
+.maratona-rio-Div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 2;
+    margin: auto;
+
+}
+.titulo-maratona-rio{
+    margin-top: 30px;
+    margin-right: -50px;
+    margin-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    z-index: 1;
+    text-align: left;
+    right: 10%;
+    left: 10%;
+
+}
+.maratona-rio-container{
+    display: flex;
+	flex-direction: row;
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+    align-content: flex-start;
+    margin-left: 50px;
+
+}
+
+/* /////////////A PALESTRA DO ZE */
+
+.palestra-do-ze-Div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 2;
+    margin: auto; 
+}
+
+.titulo-palestra-do-ze{
+    margin-top: 30px;
+    margin-right: -60px;
+    margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: flex-end;
+    justify-content: flex-end;
+    align-content: flex-end;
+    z-index: 1;
+    text-align: right;
+}
+
+.palestra-do-ze-text{
+    font-size: 21px;
+    width: 400px; 
+    margin-left: auto;
+}
+
+.palestra-do-ze-container-1{
+    display: flex;
+	flex-direction: row;
+    display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+    align-content: flex-end;
+    margin-bottom: 50px;
+}
+.palestra-do-ze-video{
+    height: 300px;
+    transition-duration: 1s;
+    border: none;
+}
+
+.palestra-do-ze-container-2{
+    display: flex;
+	flex-direction: row;
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+    align-content: flex-end;
+    margin-bottom: 50px;
+
+}
+
+.ze-contato-container{
+    display: flex;
+    flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+    align-content: flex-start;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    margin-left: 80px;
 }
