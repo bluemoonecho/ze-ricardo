@@ -16,6 +16,19 @@ $(document).ready(function(){
     slidesToScroll: 3
   })
 
+  $('.slick-show-ford').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  })
+
+  $('.slick-show-elza').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  })
+
+
 });
 
 

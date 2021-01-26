@@ -236,6 +236,9 @@ color: white;
     z-index: 1;
 }
 
+
+
+
 @media (max-width: 767px) {
 
     #main{
@@ -289,7 +292,31 @@ NAVIGATION BAR
     z-index: 10;
 
 }
+
+
+/* CASCADE ANIMATION */
+
+
+
+/* ////////END CASCADE ANIMATION */
+
+
+
+
+
+
+
+.first-1{
+    transition: color 1s ease;
+}
+.first-2{
+    transition: color 2s ease;
+}
  
+.first-3{
+    transition: color 3s ease;
+}
+
  #menuToggle
  {
    display: block;
@@ -1091,7 +1118,6 @@ p {
 .gil-Img{
     width: 400px;
     height: 500px;
-
 }
 
 .gil-container{
@@ -1123,10 +1149,30 @@ p {
  
 }
 
+.slick-show-ford{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 100%;
+ 
+}
+
+.slick-show-elza{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 100%;
+}
+
 .slideshow-img{
     width: 100%;
     height: 70vh;  
 
+}
+
+.slideshow-img-horizontal{
+    width: 100%;
+    height: 70vh; 
 }
 
 .video-gil{
@@ -1165,7 +1211,6 @@ p {
     left: 10%;
   }
 
-
   .milton-container{
     display: flex;
 	flex-direction: row;
@@ -1197,58 +1242,6 @@ p {
     width: 100%;
     margin-bottom: 50px;
 }
-/* /////////////////LIVE ELZA JORGE AGNES */
-
-.elza-jorge-agnes-Div{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    z-index: 2;
-    margin: auto;
-  }
-
-  .titulo-elza-jorge-agnes{
-    margin-top: 30px;
-    margin-right: -50px;
-    margin-bottom: 50px;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	align-items: flex-start;
-    justify-content: flex-start;
-    align-content: flex-start;
-    z-index: 1;
-    text-align: left;
-    right: 10%;
-    left: 10%;
-  }
-
-
-  .milton-celza-jorge-agnes{
-    display: flex;
-	flex-direction: row;
-    display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-    align-content: flex-start;
-    margin-left: 50px;
-  }
-
-  .elza-jorge-agnes-text{
-    font-size: 21px;
-    width: 400px;
-    margin: auto;
-  }
-
-  .elza-jorge-agnes-Img{
-    width: 400px;
-    height: 500px;  
-}
-
-  .elza-jorge-agnes-ficha{
-    width: 400px;
-    margin-left: 110px;
-  }
 
 
   /* LIVE DA FORD */
@@ -1282,17 +1275,73 @@ p {
 
 .ford-container{
     display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+    align-content: flex-start;
+}
+    
+.ford-Img{
+     width: 550px;
+     height: 400px;
+}
+
+/* /////////////////LIVE ELZA JORGE AGNES */
+
+.elza-seu-jorge-agnes-Div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 2;
+    margin: auto;
+  }
+
+  .titulo-elza-seu-jorge-agnes{
+    margin-top: 30px;
+    margin-right: -50px;
+    margin-bottom: 50px;
+	display: flex;
 	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    z-index: 1;
+    text-align: left;
+    right: 10%;
+    left: 10%;
+  }
+
+
+  .elza-seu-jorge-agnes-container{
+    display: flex;
+	flex-direction: row;
     display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
     align-content: flex-start;
     margin-left: 50px;
+  }
+
+  .elza-seu-jorge-agnes-text{
+    font-size: 21px;
+    width: 400px;
+    margin: auto;
+  }
+
+  .elza-seu-jorge-agnes-Img{
+    width: 550px;
+    height: 400px;
 }
-    
-.ford-Img{
-     width: 70%
-}
+
+  .elza-seu-jorge-agnes-ficha{
+    width: 400px;
+    margin-left: 110px;
+  }
+
+
+
+
 
 /* /////////////PREMIO UBC 2019 */
 
