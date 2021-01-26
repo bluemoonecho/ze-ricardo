@@ -1024,8 +1024,8 @@ p {
     height: 100vh;
     align-items: center; 
     margin-left: 50px;
-    width: 100px;
-    overflow-x: scroll;
+    /* width: 100px;
+    overflow-x: scroll; */
 }
 
 .box-cristo:nth-of-type(1){
@@ -1054,7 +1054,7 @@ p {
     }
 }
 
-/* ////////////////////////////GILBERTO */
+/* gil ////////////////////////////GILBERTO */
 
 
 .gilberto-Div{
@@ -1116,73 +1116,25 @@ p {
 }
 
 
-.slick-show{
-    width: 100%
+.slick-show-gil{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+ 
 }
 
 .slideshow-img{
-    width: 40vh;
-    height: 70vh; 
-}
+    width: 100%;
+    height: 70vh;  
 
-.box-gil {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    color: white;
-    height: 70vh;
-    transition-duration: 1s;
-    background-position: center;
-    background-size: cover;
 }
-
-.box-gil-video{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex: 1;
-    transition-duration: 1s;
-    border: none;
-}
-
-
-.box-gil:nth-of-type(1){
-    background-image: url("images/live-gil-e-isa/IMG_6608.jpg");
-}
-.box-gil:nth-of-type(2){
-    background-image: url("images/live-gil-e-isa/Live_Gil_Iza.JPG");
-}
-.box-gil:nth-of-type(3){
-    background-image: url("images/live-gil-e-isa/IMG_1081.jpg");
-}
-.box-gil:nth-of-type(4){
-    /* background: url("images/live-gil-e-isa/IMG_6611.MOV"); */
-}
-.box-gil:nth-of-type(5){
-    background: transparent;
-    
-}
-.box-gil:nth-of-type(6){
-}
-
-.box-gil:hover{
-    flex: 4;   
-    /* four times more than the others  */
-}
-
-*::-webkit-media-controls-panel {
-    background-color: transparent !important;
- }
-
-video::-webkit-media-controls-panel {
-    width: 20px;
-  }
 
 .video-gil{
-    width: 40vh;
+    width: 100%;
+    /* width: 30vw; */
+    /* width: 30vh; */
     height: 70vh;  
+    margin: 0;
 }
 
 
@@ -1240,87 +1192,14 @@ video::-webkit-media-controls-panel {
     margin-left: 110px;
   }
 
-  .box-milton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    color: white;
-    height: 70vh;
-    /* border: 1px solid black; */
-    /* font-size: 50px; */
-    transition-duration: 1s;
-    background-position: center;
-    background-size: cover;
-    
+.slick-show-milton{
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 50px;
 }
+/* /////////////////LIVE ELZA JORGE AGNES */
 
-.box-milton-video{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex: 1;
-    transition-duration: 1s;
-    border: none;
-
-}
-
-.box-milton-video{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex: 1;
-    transition-duration: 1s;
-    border: none;
-
-}
-
-
-.box-milton:nth-of-type(1){
-    background-image: url("images/live-gil-e-isa/IMG_6608.jpg");
-}
-.box-milton:nth-of-type(2){
-    background-image: url("images/live-gil-e-isa/Live_Gil_Iza.JPG");
-}
-.box-milton:nth-of-type(3){
-    background-image: url("images/live-gil-e-isa/IMG_1081.jpg");
-}
-.box-milton:nth-of-type(4){
-    /* background: url("images/live-gil-e-isa/IMG_6611.MOV"); */
-}
-.box-milton:nth-of-type(5){
-    background: transparent;
-    
-}
-.box-milton:nth-of-type(6){
-}
-
-.box-milton:hover{
-    flex: 4;   
-    /* four times more than the others  */
-}
-
-*::-webkit-media-controls-panel {
-    background-color: transparent !important;
- }
-
-video::-webkit-media-controls-panel {
-    width: 20px;
-  }
-
-.video-milton{
-    width: 40vh;
-    height: 70vh;  
-}
-
-/* /////////////////LIVE ELZA FORGE AGNES */
-
-
-/* ///////////////////MILTON */
-
-.milton-Div{
+.elza-jorge-agnes-Div{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -1328,7 +1207,7 @@ video::-webkit-media-controls-panel {
     margin: auto;
   }
 
-  .titulo-milton{
+  .titulo-elza-jorge-agnes{
     margin-top: 30px;
     margin-right: -50px;
     margin-bottom: 50px;
@@ -1345,7 +1224,7 @@ video::-webkit-media-controls-panel {
   }
 
 
-  .milton-container{
+  .milton-celza-jorge-agnes{
     display: flex;
 	flex-direction: row;
     display: flex;
@@ -1355,18 +1234,18 @@ video::-webkit-media-controls-panel {
     margin-left: 50px;
   }
 
-  .milton-text{
+  .elza-jorge-agnes-text{
     font-size: 21px;
     width: 400px;
     margin: auto;
   }
 
-  .milton-Img{
+  .elza-jorge-agnes-Img{
     width: 400px;
     height: 500px;  
 }
 
-  .milton-ficha{
+  .elza-jorge-agnes-ficha{
     width: 400px;
     margin-left: 110px;
   }

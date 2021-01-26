@@ -4,23 +4,22 @@
 
 $(document).ready(function(){
 
-  $('.slick-show').slick({
+  $('.slick-show-gil').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3
-  });
-  
+  })
+
+  $('.slick-show-milton').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  })
+
 });
 
 
 
-// $('.slick-show').slick({
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   arrows: false,
-//   fade: true,
-//   asNavFor: '.slider-nav'
-// });
 
 
 // Opening page timeout
