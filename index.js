@@ -4,6 +4,17 @@
 
 $(document).ready(function(){
 
+  $('.slick-show-elza').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+    variableWidth: true
+  });
+
+
   $('.slick-show-gil').slick({
     infinite: true,
     slidesToShow: 3,
@@ -22,11 +33,6 @@ $(document).ready(function(){
     slidesToScroll: 1,
   })
 
-  $('.slick-show-elza').slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  })
 
 
 });

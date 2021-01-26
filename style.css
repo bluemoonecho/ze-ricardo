@@ -1158,15 +1158,29 @@ p {
 }
 
 .slick-show-elza{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    /* width: 100%; */
     width: 100%;
-    height: 100%;
+    /* margin: 100px auto; */
+    margin: auto;
+
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
+
+ .slideshow-img-elza{
+   
+    height: 400px;
+  
+ }
+
+
+
+
+
 
 .slideshow-img{
     width: 100%;
-    height: 70vh;  
+      height: 70vh;
 
 }
 
@@ -1378,17 +1392,16 @@ p {
 }
 
 
-/* /////////////PREMIO UBC 2018 */
+/* rio /////////////RIO 2C */
 
-.premio-ubc-2018-Div{
+.rio-2c-Div{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     z-index: 2;
     margin: auto;
-
 }
-.titulo-premio-ubc-2018{
+.titulo-rio-2c-2018{
     margin-top: 30px;
     margin-right: -50px;
     margin-bottom: 50px;
@@ -1404,7 +1417,7 @@ p {
     left: 10%;
 
 }
-.premio-ubc-2018-container{
+.prio-2c-container{
     display: flex;
 	flex-direction: row;
     display: flex;
