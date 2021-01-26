@@ -236,27 +236,37 @@ color: white;
     z-index: 1;
 }
 
-
-
 @media (max-width: 767px) {
 
     #main{
+
         /* margin-top: 0px; */
         margin-left: 5px;
         margin-right: 5px;
     }
 
-    #main-mobile{
+    #main-mobile {
         transition: margin-top .5s;
         margin-top: 1px;
         margin-left: 5px;
         margin-right: 5px;
     }
 
+    .addMargin {
+        transition: margin-top .5s;
+        margin-top:400px;
+
+    }
+
+
     #nav-Div{
         position: top;
     }
+
+  
 } 
+
+
 
 
 #main-o-que-a-leve-ja-fez{
@@ -924,6 +934,19 @@ p {
 
 /* //////////////////////////////////////CRISTO */
 
+
+.foto-verao-tim{
+    /* background: url(images/PHOTO-2020-09-04-22-03-14.jpg);
+    background-repeat: no-repeat;
+    background-size: auto; */
+    object-fit: cover;
+
+    /* background: cover; */
+    /* width: 100px; */
+    width: 100%;
+    height: 100vh;
+}
+
 .cristo-Div{
     display: flex;
     flex-direction: column;          
@@ -1001,6 +1024,8 @@ p {
     height: 100vh;
     align-items: center; 
     margin-left: 50px;
+    width: 100px;
+    overflow-x: scroll;
 }
 
 .box-cristo:nth-of-type(1){
@@ -1090,6 +1115,16 @@ p {
     align-content: flex-end;
 }
 
+
+.slick-show{
+    width: 100%
+}
+
+.slideshow-img{
+    width: 40vh;
+    height: 70vh; 
+}
+
 .box-gil {
     display: flex;
     justify-content: center;
@@ -1100,7 +1135,6 @@ p {
     transition-duration: 1s;
     background-position: center;
     background-size: cover;
-    
 }
 
 .box-gil-video{
@@ -1280,6 +1314,63 @@ video::-webkit-media-controls-panel {
     width: 40vh;
     height: 70vh;  
 }
+
+/* /////////////////LIVE ELZA FORGE AGNES */
+
+
+/* ///////////////////MILTON */
+
+.milton-Div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 2;
+    margin: auto;
+  }
+
+  .titulo-milton{
+    margin-top: 30px;
+    margin-right: -50px;
+    margin-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    z-index: 1;
+    text-align: left;
+    right: 10%;
+    left: 10%;
+  }
+
+
+  .milton-container{
+    display: flex;
+	flex-direction: row;
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+    align-content: flex-start;
+    margin-left: 50px;
+  }
+
+  .milton-text{
+    font-size: 21px;
+    width: 400px;
+    margin: auto;
+  }
+
+  .milton-Img{
+    width: 400px;
+    height: 500px;  
+}
+
+  .milton-ficha{
+    width: 400px;
+    margin-left: 110px;
+  }
+
 
   /* LIVE DA FORD */
 .ford-Div{

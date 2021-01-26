@@ -1,4 +1,28 @@
 
+/// Slick Carousell
+
+
+$(document).ready(function(){
+
+  $('.slick-show').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  });
+  
+});
+
+
+
+// $('.slick-show').slick({
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   arrows: false,
+//   fade: true,
+//   asNavFor: '.slider-nav'
+// });
+
+
 // Opening page timeout
 
 setTimeout(function () {
@@ -63,7 +87,7 @@ document.querySelector('.hide-item')
 //   document.getElementById("main").style.width = "0";
 // }
 
-var w = window.matchMedia("(max-width: 767px)")
+let w = window.matchMedia("(max-width: 767px)")
 
 // if(w.matches){
 // function activateMobile(){
@@ -74,22 +98,74 @@ var w = window.matchMedia("(max-width: 767px)")
 //         x.style.marginTop = "400px";
 //       }
 //     }
-  
+
+
+// $(window).resize(function() {
+//   if ($(window).width() > 767){
+
+//   }
+// });
+// activateMobile();
+
+
+// function activateMobile(){
+    
+//   var x = document.getElementById("main-mobile");
+
+//   if (x.style.marginTop === "400px" ){
+//     x.style.marginTop = "1px";
+//   } else {
+//     x.style.marginTop = "400px";
+// }
+// }
+
+function mobileMargin(){
+  var x = document.getElementById("main-mobile");
+  if( x.classList.contains('addMargin')){
+    x.classList.remove('addMargin');
+  } else {
+    x.classList.add('addMargin')
+  }
+
+}
+
+// $('.slide-gil').slick({
+//   infinite: true,
+//   slidesToShow: 3,
+//   slidesToScroll: 3
+// });
+
 
 // Create a media condition that targets viewports at least 768px wide
 
-  function activateMobile(){
-      var x = document.getElementById("main-mobile");
-      if (x.style.marginTop === "400px") {
-        x.style.marginTop = "1px";
-      } else {
-        x.style.marginTop = "400px";
-      }
-    }
+  // function activateMobile(){
+    
+  //     var x = document.getElementById("main-mobile");
+
+  //     if (x.style.marginTop === "400px" ){
+  //       x.style.marginTop = "1px";
+  //     } else {
+  //       x.style.marginTop = "400px";
+  //     }
+  //   }
 
 
 
-
+    // function clickHandler() {
+    //   alert("media worked");
+    // }
+    
+    // function myFunction(x) {
+    //   if (x.matches) { // If media query matches
+    //     document.getElementById("resources").addEventListener("click", activateMobile)
+    //   } else {
+    //     document.getElementById("resources").removeEventListener("click", activateMobile)
+    //   }
+    // }
+    
+    // var x = window.matchMedia("(max-width: 979px)")
+    // myFunction(x) // Call listener function at run time
+    // x.addListener(myFunction) // Attach listener function on state changes
 
 
 // function mobileNav() {
@@ -118,4 +194,4 @@ var w = window.matchMedia("(max-width: 767px)")
 //     $('ul').slideToggle();
 //     $(this).toggleClass('open');
 //   });
-// });
+// })
