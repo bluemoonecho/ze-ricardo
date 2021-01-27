@@ -16,10 +16,19 @@ $(document).ready(function(){
 
 
   $('.slick-show-gil').slick({
+    dots: true,
     infinite: true,
+    speed: 300,
     slidesToShow: 3,
-    slidesToScroll: 3
+    slidesToScroll: 1,
+    centerMode: true,
+    variableWidth: true
   })
+
+  $('.slick-show-gil').slickLightbox({
+    src: 'src',
+    itemSelector: '.selector img'
+  });
 
   $('.slick-show-milton').slick({
     infinite: true,
@@ -33,11 +42,16 @@ $(document).ready(function(){
     slidesToScroll: 1,
   })
 
-
+  $('#default-demo').slickLightbox();
 
 });
 
 
+// Get the modal
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
 
 
 
